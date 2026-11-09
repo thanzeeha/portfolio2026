@@ -1,0 +1,141 @@
+<!-- RESUME PAGE: summary, education, skills, projects, certificates and PDF printing. -->
+<!-- RESUME PAGE: summary, education, skills, projects, certificates and PDF printing. -->
+<!-- RESUME PAGE: summary, education, skills, projects, certificates and PDF printing. -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Resume | Beyond the Code
+  </title>
+  <link href="assets/style.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+ </head>
+ <body>
+  <header class="header">
+   <a class="brand" href="index.html">
+    BEYOND
+    <span>
+     THE CODE
+    </span>
+   </a>
+   <div class="header-tools">
+    <button aria-label="Toggle dark mode" class="theme-toggle" type="button">
+     ◐
+    </button>
+    <button aria-label="Menu" class="menu">
+     ☰
+    </button>
+   </div>
+   <nav>
+    <a href="index.html">
+     Home
+    </a>
+    <a class="active" href="resume.html">
+     Resume
+    </a>
+    <a href="biodata.html">
+     Bio-data
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main class="container page">
+   <div class="page-heading">
+    <div>
+     <p class="eyebrow">
+      CAREER PROFILE
+     </p>
+     <h1>
+      Resume
+     </h1>
+     <p class="muted" id="resumeName">
+     </p>
+    </div>
+    <button class="btn" onclick="window.print()">
+     Print / Save as PDF
+    </button>
+   </div>
+   <section id="resumePdfViewer" class="resume-section"></section>
+   <section class="resume-section">
+    <h2>
+     Professional Summary
+    </h2>
+    <p class="body-copy" id="resumeSummary">
+    </p>
+   </section>
+   <section class="resume-section">
+    <h2>
+     Education
+    </h2>
+    <div id="educationList">
+    </div>
+   </section>
+   <section class="resume-section">
+    <h2>
+     Technical Skills
+    </h2>
+    <div class="skill-list" id="skillsList">
+    </div>
+   </section>
+   <section class="resume-section" id="projects">
+    <h2>
+     Projects
+    </h2>
+    <div id="projectList">
+    </div>
+   </section>
+   <section class="resume-section">
+    <h2>
+     Certifications
+    </h2>
+    <div id="certList">
+    </div>
+   </section>
+   <section class="resume-section">
+    <h2>
+     Participation
+    </h2>
+    <div id="participationList">
+    </div>
+   </section>
+   <section class="resume-section">
+    <h2>
+     Languages
+    </h2>
+    <div class="chips" id="languageList">
+    </div>
+   </section>
+  </main>
+  <footer>
+   <span>
+    &copy;
+    <b id="year">
+    </b>
+    Beyond the Code
+   </span>
+   <span class="visitors">
+    Visits:
+    <b id="visitCount">
+     &mdash;
+    </b>
+   </span>
+   <a href="admin.html">
+    Admin
+   </a>
+   <button aria-label="Back to top" class="back-top" type="button">
+    &uarr; Top
+   </button>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+  </script>
+  <script src="assets/config.js">
+  </script>
+  <script src="assets/app.js">
+  </script>
+ </body>
+</html>

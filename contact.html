@@ -1,0 +1,113 @@
+<!-- CONTACT PAGE: contact links and email draft form. -->
+<!-- CONTACT PAGE: contact links and email draft form. -->
+<!-- CONTACT PAGE: email, phone, social links and email draft form. -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Contact | Beyond the Code
+  </title>
+  <link href="assets/style.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+ </head>
+ <body>
+  <header class="header">
+   <a class="brand" href="index.html">
+    BEYOND
+    <span>
+     THE CODE
+    </span>
+   </a>
+   <div class="header-tools">
+    <button aria-label="Toggle dark mode" class="theme-toggle" type="button">
+     ◐
+    </button>
+    <button aria-label="Menu" class="menu">
+     ☰
+    </button>
+   </div>
+   <nav>
+    <a href="index.html">
+     Home
+    </a>
+    <a href="projects.html">Projects</a>
+   <a href="resume.html">
+     Resume
+    </a>
+    <a href="biodata.html">
+     Bio-data
+    </a>
+    <a class="active" href="contact.html">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main class="container page">
+   <p class="eyebrow">
+    LET'S CONNECT
+   </p>
+   <h1>
+    Contact
+   </h1>
+   <p class="lead">
+    Have an opportunity, project idea or question? Feel free to reach out.
+   </p>
+   <div class="contact-card" id="contactDetails">
+   </div>
+   <section class="message-section">
+    <h2>
+     Send a message
+    </h2>
+    <p class="muted">
+     This opens your email app with the message ready to send.
+    </p>
+    <form id="contactForm">
+     <label>
+      Your name
+      <input id="visitorName" required=""/>
+     </label>
+     <label>
+      Your email
+      <input id="visitorEmail" required="" type="email"/>
+     </label>
+     <label>
+      Message
+      <textarea id="visitorMessage" required="" rows="5"></textarea>
+     </label>
+     <button class="btn" type="submit">
+      Prepare email &nearrow;
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer>
+   <span>
+    &copy;
+    <b id="year">
+    </b>
+    Beyond the Code
+   </span>
+   <span class="visitors">
+    Visits:
+    <b id="visitCount">
+     &mdash;
+    </b>
+   </span>
+   <a href="admin.html">
+    Admin
+   </a>
+   <button aria-label="Back to top" class="back-top" type="button">
+    &uarr; Top
+   </button>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+  </script>
+  <script src="assets/config.js">
+  </script>
+  <script src="assets/app.js">
+  </script>
+ </body>
+</html>

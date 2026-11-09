@@ -1,0 +1,246 @@
+<!-- ADMIN PAGE: sign-in and forms to edit all portfolio content. -->
+<!-- ADMIN PAGE: sign-in and forms to edit all portfolio content. -->
+<!-- ADMIN PAGE: sign-in and editing forms for all portfolio content. -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Admin | Beyond the Code
+  </title>
+  <link href="assets/style.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+ </head>
+ <body>
+  <header class="header">
+   <a class="brand" href="index.html">
+    BEYOND
+    <span>
+     THE CODE
+    </span>
+   </a>
+   <a class="back" href="index.html">
+    &larr; View website
+   </a>
+  </header>
+  <main class="container page admin">
+   <p class="eyebrow">
+    PRIVATE CONTENT MANAGER
+   </p>
+   <h1>
+    Website Admin
+   </h1>
+   <section class="panel" id="setup">
+    <h2>
+     One-time setup required
+    </h2>
+    <p>
+     Connect Supabase using the steps in README.md. Then create your admin login in Supabase Authentication.
+    </p>
+   </section>
+   <section class="panel" hidden="" id="login">
+    <h2>
+     Admin sign in
+    </h2>
+    <form id="loginForm">
+     <label>
+      Email
+      <input id="adminEmail" required="" type="email"/>
+     </label>
+     <label>
+      Password
+      <input id="adminPassword" required="" type="password"/>
+     </label>
+     <button class="btn">
+      Sign in
+     </button>
+     <p id="loginMessage">
+     </p>
+    </form>
+   </section>
+   <section hidden="" id="editor">
+    <div class="panel">
+     <div class="editor-top">
+      <h2>
+       Edit all website details
+      </h2>
+      <button class="btn secondary" id="logout">
+       Sign out
+      </button>
+     </div>
+     <p class="muted">
+      Change any text, add or remove entries, and upload or remove photos. Save to publish.
+     </p>
+     <form id="editForm">
+      <details open="">
+       <summary>
+        Personal details
+       </summary>
+       <div class="form-grid">
+        <label>
+         Full name
+         <input id="name"/>
+        </label>
+        <label>
+         Headline / course
+         <input id="headline"/>
+        </label>
+        <label>
+         Location
+         <input id="location"/>
+        </label>
+        <label>
+         Email
+         <input id="email" type="email"/>
+        </label>
+        <label>
+         Phone
+         <input id="phone"/>
+        </label>
+        <label>
+         GitHub URL
+         <input id="github" type="url"/>
+        </label>
+        <label>
+         LinkedIn URL
+         <input id="linkedin" type="url"/>
+        </label>
+       </div>
+       <label>
+        Professional summary
+        <textarea id="summary" rows="4"></textarea>
+       </label>
+      </details>
+      <details>
+       <summary>
+        Profile photo
+       </summary>
+       <label>
+        Upload / replace photo
+        <input accept="image/png,image/jpeg,image/webp" id="photo" type="file"/>
+       </label>
+       <div class="photo-tools">
+        <img alt="Photo preview" hidden="" id="preview"/>
+        <button class="btn secondary" id="removePhoto" type="button">
+         Remove photo
+        </button>
+       </div>
+       <small>
+        Optional. JPG, PNG or WebP, maximum 5 MB.
+       </small>
+      </details>
+      <details><summary>Actual Resume PDF</summary><p class="muted">Upload your own PDF. Visitors can view or download it from the Resume page. Replace or remove it whenever you want.</p><label>Upload / replace resume PDF<input id="resumePdf" type="file" accept="application/pdf"></label><div class="photo-tools"><a id="resumePdfCurrent" target="_blank" rel="noreferrer" hidden>View current PDF</a><button class="btn secondary" id="removeResumePdf" type="button">Remove uploaded PDF</button></div><small>PDF only, maximum 10 MB. Supabase Storage must be configured.</small></details>
+      <details>
+       <summary>
+        Education
+       </summary>
+       <div id="educationEditor">
+       </div>
+       <button class="btn secondary add" data-add="education" type="button">
+        + Add education
+       </button>
+      </details>
+      <details>
+       <summary>
+        Technical skills
+       </summary>
+       <div id="skillsEditor">
+       </div>
+       <button class="btn secondary add" data-add="skills" type="button">
+        + Add skill group
+       </button>
+      </details>
+      <details>
+       <summary>
+        Projects
+       </summary>
+       <div id="projectsEditor">
+       </div>
+       <button class="btn secondary add" data-add="projects" type="button">
+        + Add project
+       </button>
+      </details>
+      <details>
+       <summary>
+        Certifications
+       </summary>
+       <div id="certificationsEditor">
+       </div>
+       <button class="btn secondary add" data-add="certifications" type="button">
+        + Add certification
+       </button>
+      </details>
+      <details>
+       <summary>
+        Participation / activities
+       </summary>
+       <div id="participationEditor">
+       </div>
+       <button class="btn secondary add" data-add="participation" type="button">
+        + Add activity
+       </button>
+      </details>
+      <details>
+       <summary>
+        Languages
+       </summary>
+       <div id="languagesEditor">
+       </div>
+       <button class="btn secondary add" data-add="languages" type="button">
+        + Add language
+       </button>
+      </details>
+      <details>
+       <summary>
+        Bio-data / personal information
+       </summary>
+       <div class="form-grid">
+        <label>
+         Date of birth
+         <input id="dateOfBirth" placeholder="Optional"/>
+        </label>
+        <label>
+         Gender
+         <input id="gender" placeholder="Optional"/>
+        </label>
+        <label>
+         Nationality
+         <input id="nationality" placeholder="Optional"/>
+        </label>
+        <label>
+         Address
+         <input id="address" placeholder="Optional"/>
+        </label>
+       </div>
+       <label>
+        Career objective
+        <textarea id="careerObjective" rows="3"></textarea>
+       </label>
+      </details>
+      <button class="btn save">
+       Save and publish all changes
+      </button>
+      <p id="saveMessage" role="status">
+      </p>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <span>
+    Beyond the Code
+   </span>
+   <a href="index.html">
+    Public website
+   </a>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+  </script>
+  <script src="assets/config.js">
+  </script>
+  <script src="assets/admin.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,345 @@
+{
+  "name": "Nafeesath Thanzeeha",
+  "headline": "Computer Science & Engineering Student",
+  "location": "Mangalore, India",
+  "email": "naftha126@gmail.com",
+  "phone": "+91 8217513491",
+  "linkedin": "https://www.linkedin.com/in/",
+  "github": "https://github.com/thanzeeha",
+  "photoUrl": "",
+  "summary": "Motivated Computer Science & Engineering student with hands-on experience in full-stack web development, embedded systems and AI-driven automation. Interested in building practical, reliable solutions.",
+  "education": [
+    {
+      "degree": "B.E. Computer Science & Engineering",
+      "institution": "P.A. College of Engineering, Mangalore",
+      "year": "Expected graduation: 2028",
+      "score": ""
+    },
+    {
+      "degree": "PCMB",
+      "institution": "St. Aloysius P.U. College, Mangalore",
+      "year": "2022–2024",
+      "score": "Percentile: 83.83%"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Frontend",
+      "items": "HTML, CSS, JavaScript, React"
+    },
+    {
+      "group": "Backend",
+      "items": "Node.js, Express.js"
+    },
+    {
+      "group": "Databases",
+      "items": "MongoDB"
+    },
+    {
+      "group": "Programming Languages",
+      "items": "Java, C, Python (Basic)"
+    },
+    {
+      "group": "Tools & Frameworks",
+      "items": "VS Code, GitHub"
+    },
+    {
+      "group": "Operating Systems",
+      "items": "Windows, Linux"
+    }
+  ],
+  "projects": [
+    {
+      "name": "OfflinePay",
+      "category": "Research / FinTech",
+      "stack": "React, TypeScript, Node.js, Express, Supabase, BLE",
+      "description": "A checkpoint-based mechanism for bounding merchant risk in offline peer-to-peer mesh payments. Uses bank-signed sequence checkpoints and local state to reduce transaction limits as checkpoints are missed.",
+      "status": "Research prototype",
+      "image": "assets/project-images/offlinepay.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": true
+    },
+    {
+      "name": "NirmanCheck",
+      "category": "IoT / Smart Automation",
+      "stack": "Python, Signal Processing, Accelerometer, FFT, ML",
+      "description": "A vibration-based preliminary screening concept for construction materials. Compares measured vibration fingerprints with validated samples to flag normal, suspicious or retest outcomes.",
+      "status": "Prototype / development",
+      "image": "assets/project-images/nirmancheck.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": true
+    },
+    {
+      "name": "Non-Invasive Breast Cancer Pre-Screening Patch",
+      "category": "IoT / Embedded Systems",
+      "stack": "ESP32, NTC Thermistors, FSR402, Multiplexer, Sensor Fusion",
+      "description": "A wearable pre-screening prototype concept combining temperature measurements and pressure mapping. Intended as an exploratory screening aid, not a diagnostic device.",
+      "status": "Prototype / development",
+      "image": "assets/project-images/breast-patch.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": true
+    },
+    {
+      "name": "Automated IQ / WAV Signal Analysis Tool",
+      "category": "AI / Signal Processing",
+      "stack": "Python, NumPy, SciPy, PyTorch, scikit-learn, Streamlit",
+      "description": "A tool concept to analyse .IQ and .wav files and generate structured signal reports, including modulation classification and signal parameter extraction.",
+      "status": "Project concept",
+      "image": "assets/project-images/signal-analysis.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": true
+    },
+    {
+      "name": "SmartPrint – Automated Printing Platform",
+      "category": "Web / Application",
+      "stack": "Python, Flask, SQLite, HTML, CSS, JavaScript",
+      "description": "A web-based printing workflow concept for document submission, print settings and managing print requests through an admin interface.",
+      "status": "Academic project",
+      "image": "assets/project-images/smartprint.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": true
+    },
+    {
+      "name": "ScamCart – Shopping Safety Extension",
+      "category": "AI / Browser Extension",
+      "stack": "JavaScript, Chrome Extension APIs, ML / Heuristics",
+      "description": "A browser-extension concept that helps identify potentially suspicious online shopping websites and presents warnings to users.",
+      "status": "Project concept",
+      "image": "assets/project-images/scamcart.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": true
+    },
+    {
+      "name": "Beach Water Quality Monitoring",
+      "category": "IoT / Environment",
+      "stack": "ESP32, Water-quality sensors, Dashboard",
+      "description": "A monitoring concept for collecting selected beach-water parameters using sensors and presenting readings for observation.",
+      "status": "Project concept",
+      "image": "assets/project-images/beach-water.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    },
+    {
+      "name": "Salescope – Sales Analytics",
+      "category": "Web / Business Analytics",
+      "stack": "React, Node.js, MongoDB, Chart.js",
+      "description": "A sales analytics application concept for presenting sales, inventory and performance information in a dashboard.",
+      "status": "Project concept",
+      "image": "assets/project-images/salescope.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    },
+    {
+      "name": "EMG Muscle Activity Monitoring",
+      "category": "IoT / Embedded Systems",
+      "stack": "ESP32, EMG Sensor, ThingSpeak",
+      "description": "An embedded monitoring project that reads muscle activity using an EMG sensor and visualises uploaded readings through ThingSpeak.",
+      "status": "Prototype",
+      "image": "assets/project-images/emg.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    },
+    {
+      "name": "Footstep Energy Generation",
+      "category": "Energy / Embedded Systems",
+      "stack": "Piezoelectric Sensors, Embedded Hardware",
+      "description": "A hardware project exploring electrical energy generation from footsteps using piezoelectric elements.",
+      "status": "Prototype",
+      "image": "assets/project-images/footstep.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    },
+    {
+      "name": "Simple Drone Prototype",
+      "category": "IoT / Embedded Systems",
+      "stack": "Seeed Studio XIAO ESP32-S3, MPU6050, VL53L0X, DC Motors, 3D Printing",
+      "description": "A drone prototype using a 3D-printed frame, motors and onboard sensors. Hardware integration and prototype testing were explored.",
+      "status": "Prototype / testing",
+      "image": "assets/project-images/drone.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    },
+    {
+      "name": "Tap-Less Canteen",
+      "category": "Web / IoT Concept",
+      "stack": "NFC, QR, Web Application",
+      "description": "A concept for streamlining canteen transactions and reducing queues using a digital identification or QR-based flow.",
+      "status": "Idea / concept",
+      "image": "assets/project-images/canteen.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    },
+    {
+      "name": "One Face, One Card – Attendance Assurance",
+      "category": "AI / Automation Concept",
+      "stack": "Face Recognition, RFID / Smart Card",
+      "description": "An attendance-system concept intended to reduce proxy attendance by combining identity verification with a card-based workflow.",
+      "status": "Idea / concept",
+      "image": "assets/project-images/attendance.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    },
+    {
+      "name": "Electricity from Footsteps",
+      "category": "Energy / IoT",
+      "stack": "Piezoelectric Sensors",
+      "description": "An exploration of harvesting small amounts of energy from pressure generated by footsteps.",
+      "status": "Prototype",
+      "image": "assets/project-images/footstep.svg",
+      "gallery": "",
+      "github": "",
+      "demo": "",
+      "problem": "",
+      "solution": "",
+      "contribution": "",
+      "challenges": "",
+      "outcomes": "",
+      "featured": false
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AI Tools & ChatGPT Workshop",
+      "issuer": "be10x",
+      "date": "September 2025"
+    },
+    {
+      "name": "Salesforce Essentials and CRM Foundations",
+      "issuer": "Salesforce",
+      "date": "April 2026"
+    },
+    {
+      "name": "Agentic AI in Salesforce",
+      "issuer": "Salesforce",
+      "date": "May 2026"
+    }
+  ],
+  "participation": [
+    {
+      "name": "Hydra Hacks (Hackathon) – APRAMEYA 2025",
+      "organizer": "NITTE Meenakshi Institute of Technology",
+      "date": "November 2025"
+    },
+    {
+      "name": "Hackathon Participation – FREO-FUSION 2025",
+      "organizer": "P.A. College of Engineering",
+      "date": "September 2025"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Proficient"
+    },
+    {
+      "name": "Malayalam",
+      "level": "Fluent"
+    },
+    {
+      "name": "Hindi",
+      "level": "Fluent"
+    },
+    {
+      "name": "Kannada",
+      "level": "Fluent"
+    }
+  ],
+  "bio": {
+    "dateOfBirth": "",
+    "gender": "",
+    "nationality": "",
+    "address": "",
+    "careerObjective": "To learn, contribute and grow by working on meaningful technology projects."
+  }
+}

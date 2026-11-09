@@ -1,0 +1,107 @@
+<!-- BIO-DATA PAGE: optional personal details selected by the owner. -->
+<!-- BIO-DATA PAGE: optional personal details selected by the owner. -->
+<!-- BIO-DATA PAGE: optional personal details selected by the owner. -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Bio-data | Beyond the Code
+  </title>
+  <link href="assets/style.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+ </head>
+ <body>
+  <header class="header">
+   <a class="brand" href="index.html">
+    BEYOND
+    <span>
+     THE CODE
+    </span>
+   </a>
+   <div class="header-tools">
+    <button aria-label="Toggle dark mode" class="theme-toggle" type="button">
+     ◐
+    </button>
+    <button aria-label="Menu" class="menu">
+     ☰
+    </button>
+   </div>
+   <nav>
+    <a href="index.html">
+     Home
+    </a>
+    <a href="projects.html">Projects</a>
+   <a href="resume.html">
+     Resume
+    </a>
+    <a class="active" href="biodata.html">
+     Bio-data
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main class="container page">
+   <div class="page-heading">
+    <div>
+     <p class="eyebrow">
+      PERSONAL PROFILE
+     </p>
+     <h1>
+      Bio-data
+     </h1>
+     <p class="muted">
+      Personal information you choose to share.
+     </p>
+    </div>
+   </div>
+   <div class="bio-card">
+    <div class="bio-photo">
+     <img alt="Profile photo" hidden="" id="bioPhoto"/>
+     <div id="bioFallback">
+      Photo optional
+     </div>
+    </div>
+    <div class="bio-details" id="bioDetails">
+    </div>
+   </div>
+   <section class="resume-section">
+    <h2>
+     Career Objective
+    </h2>
+    <p class="body-copy" id="careerObjective">
+    </p>
+   </section>
+  </main>
+  <footer>
+   <span>
+    &copy;
+    <b id="year">
+    </b>
+    Beyond the Code
+   </span>
+   <span class="visitors">
+    Visits:
+    <b id="visitCount">
+     &mdash;
+    </b>
+   </span>
+   <a href="admin.html">
+    Admin
+   </a>
+   <button aria-label="Back to top" class="back-top" type="button">
+    &uarr; Top
+   </button>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+  </script>
+  <script src="assets/config.js">
+  </script>
+  <script src="assets/app.js">
+  </script>
+ </body>
+</html>
